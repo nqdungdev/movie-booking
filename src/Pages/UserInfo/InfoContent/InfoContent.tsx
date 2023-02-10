@@ -23,6 +23,7 @@ const InfoContent = (props: Props) => {
   useEffect(() => {
     document.title = "Thông tin người dùng";
   }, []);
+
   if (isInfoUserLoading) {
     return <LoadingLazy />;
   }
